@@ -78,7 +78,9 @@ button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow */
     animation: fadeIn 1s ease-in-out; /* Fade-in animation */
 }
-
+.Ha{
+    font-weight: 4rem;
+}
 /* Resume Section Styling */
 h3 {
     margin-top: 0;
