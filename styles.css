@@ -85,14 +85,14 @@ button:hover {
 .Ha{
     font-weight: 4rem;
     text-align:center;
-}
-/* Resume Section Styling */
-h1 {
-    margin-top: 0;
+     margin-top: 0;
     color: #007bff; /* Blue color for the name */
     font-size: 2rem;
     font-weight: bolder;
 }
+}
+/* Resume Section Styling */
+
 
 h4 {
     border-bottom: 2px solid #007bff; /* Blue underline for section headings */
