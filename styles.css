@@ -83,12 +83,12 @@ button:hover {
     animation: fadeIn 1s ease-in-out; /* Fade-in animation */
 }
 .Ha{
-    font-weight: 4rem;
+    
     text-align:center;
      margin-top: 0;
     color: #007bff; /* Blue color for the name */
-    font-size: 2rem;
-    font-weight: bolder;
+    font-size: 3rem;
+   
 }
 }
 /* Resume Section Styling */
