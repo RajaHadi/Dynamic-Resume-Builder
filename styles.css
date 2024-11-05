@@ -9,6 +9,8 @@ body {
 
 /* Header Styling */
 header {
+    display:flex;
+    justify-content: space-around;
     background-color: #007bff; /* Blue background */
     color: white;
     padding: 20px 0;
