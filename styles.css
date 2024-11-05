@@ -10,7 +10,7 @@ body {
 /* Header Styling */
 header {
     display:flex;
-gap:50px;
+justify-content: space-around;
     background-color: #007bff; /* Blue background */
     color: white;
     padding: 20px 0;
