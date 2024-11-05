@@ -32,6 +32,7 @@ header img{
 
 /* Form Container Styling */
 .form-container {
+    border:3px solid #007bff;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
