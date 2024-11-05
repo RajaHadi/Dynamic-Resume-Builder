@@ -25,6 +25,9 @@ header h1 {
     font-weight: bold;
     color:white;
 }
+header img{
+    padding:10px;
+}
 
 /* Form Container Styling */
 .form-container {
