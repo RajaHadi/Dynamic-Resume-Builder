@@ -101,6 +101,9 @@ button:hover {
 #generatedResume h1{
      color: #156385;
 }
+    #generatedResume p{
+     font-size:22px;
+}
 /* Resume Section Styling */
 
 
