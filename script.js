@@ -11,6 +11,7 @@ inputs.forEach(function (input) {
 // Function to generate and update the resume
 function generateResume() {
     // Get input values
+    var address = document.getElementById('address').value
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var degree = document.getElementById('degree').value;
@@ -21,7 +22,7 @@ function generateResume() {
     // Clear previous resume
     resumeContainer.innerHTML = '';
     // Dynamically generate resume content
-    resumeContainer.innerHTML = "\n        <h1>".concat(name, "</h1>\n        <p>Email: ").concat(email, "</p>\n        <h4>Education</h4>\n        <p>").concat(degree, " - ").concat(school, "</p>\n        <h4>Work Experience</h4>\n       <ul> <li><p>").concat(position, "at ").concat(company, "</p></li></ul> \n        <h4>Skills</h4>\n        <ul>\n            ").concat(skills.map(function (skill) { return "<li>".concat(skill.trim(), "</li>"); }).join(''), "\n        </ul>\n    ");
+    resumeContainer.innerHTML = "\n        <h1>".concat(name, "</h1>\n        <p>Email: ").concat(email, "</p>\n    <p> ").concat(address, "</p>\n     <h4>Education</h4>\n        <p>").concat(degree, " - ").concat(school, "</p>\n        <h4>Work Experience</h4>\n       <ul> <li><p>").concat(position, "at ").concat(company, "</p></li></ul> \n        <h4>Skills</h4>\n        <ul>\n            ").concat(skills.map(function (skill) { return "<li>".concat(skill.trim(), "</li>"); }).join(''), "\n        </ul>\n    ");
 }
 // Handle form submission
 form.addEventListener('submit', function (event) {
