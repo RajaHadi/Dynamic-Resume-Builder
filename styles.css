@@ -98,7 +98,9 @@ button:hover {
     font-size: 3rem;
    
 }
-
+#generatedResume h1{
+     color: #007bff;
+}
 /* Resume Section Styling */
 
 
