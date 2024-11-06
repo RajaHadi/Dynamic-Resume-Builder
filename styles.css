@@ -144,7 +144,9 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
+#downloadResume{
+    background-color:red;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .form-container, .resume-container {
