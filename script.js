@@ -42,3 +42,39 @@ form.addEventListener('submit', function (event) {
     // Generate the resume again in case form is submitted before changes
     generateResume();
 });
+document.getElementById('downloadResume').style.display = 'inline-block';
+
+    // Update the download button to trigger PDF generation when clicked
+    document.getElementById('downloadResume').addEventListener('click', function() {
+        downloadPDF(name, email, address, degree, school, position, company, skills);
+    });
+}
+
+// Function to download the resume as a PDF
+function downloadPDF(name, email, address, degree, school, position, company, skills) {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    // Add the resume content to the PDF
+    doc.setFontSize(18);
+    doc.text(name, 20, 20);  // Name at the top
+
+    doc.setFontSize(12);
+    doc.text(`Email: ${email}`, 20, 30);
+    doc.text(`Address: ${address}`, 20, 40);
+    
+    doc.text('Education:', 20, 50);
+    doc.text(`${degree} - ${school}`, 20, 60);
+
+    doc.text('Work Experience:', 20, 70);
+    doc.text(`${position} at ${company}`, 20, 80);
+
+    doc.text('Skills:', 20, 90);
+    skills.forEach((skill, index) => {
+        doc.text(skill.trim(), 20, 100 + (index * 10)); // List skills
+    });
+
+    // Trigger the download
+    doc.save(`${name}_Resume.pdf`);
+}
+
