@@ -146,6 +146,8 @@ footer a:hover {
 }
 #downloadResume{
     background-color:red;
+    width:100px;
+    height:100px;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
